@@ -1,0 +1,6 @@
+# line bot key
+line_channel_access_token = 'yRzgnCRg0LsLFbEuhRIvTcOfL4BkWQGImd9bJSYyxQICeuL4Ra+O/j0I+bqEheHJbxu5sodEwezLm0bPkw73TxoAHKPxn+ZSBUiKMY3WVkjc9EGYsCn0GS+3Ojnx5IDN4VKaj6CDp5wuyj/PJxqVRAdB04t89/1O/w1cDnyilFU='
+line_channel_secret = '718da21ccf4a924f9f1a88124f1a23a4'
+
+#Dialogflow
+CLIENT_ACCESS_TOKEN = 'ea4eac562b84405aa2b0b1738a84e352'
