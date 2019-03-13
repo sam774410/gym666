@@ -24,7 +24,7 @@ from linebot.models import (
 )
 
 from helper.config import line_channel_secret, line_channel_access_token
-from helper.template import temp_dashboard
+from template.dashboard import main_info
 from datasource.current_people import A_site, B_site, C_site, Other_site, current_people
 from datasource.location_query import gym_search, gym_detail, gym_address
 from dialogflow.nlp import get_GYM_NAME
@@ -82,7 +82,7 @@ def handle_text_message(event):
         #line_single_push(USER_ID, str(result))
 
         #push info ... flex msg...
-        tmplate = temp_dashboard(response["gymName"], result[0], result[1], result[2], result[3], address)
+        tmplate = main_info(response["gymName"], result[0], result[1], result[2], result[3], address)
         line_bot_api.reply_message(
             event.reply_token, tmplate)
 
@@ -119,23 +119,23 @@ def handle_location_message(event):
         res = res["response"]
 
         #web url
-        web_res = []
+        '''web_res = []
         for i in range(0, 3):
             result = gym_detail(res[i]['GymID'])
-            web_res.append(result["web"])
+            web_res.append(result["web"])'''
 
         carousel_template = CarouselTemplate(columns=[
                 CarouselColumn(thumbnail_image_url=res[0]['Photo1'],text='約 '+str(res[0]['Distance'])+' 公里', title=res[0]['Name'], actions=[
-                    MessageAction(label='查詢即時資訊', text=res[0]['Name']),
-                    URIAction(label='官方網站', uri=web_res[0])
+                    MessageAction(label='查詢即時資訊', text=res[0]['Name'])
+                    #URIAction(label='官方網站', uri=web_res[0])
                 ]),
                 CarouselColumn(thumbnail_image_url=res[1]['Photo1'],text='約 '+str(res[1]['Distance'])+' 公里', title=res[1]['Name'], actions=[
-                    MessageAction(label='查詢即時資訊', text=res[1]['Name']),
-                    URIAction(label='官方網站', uri=web_res[1])
+                    MessageAction(label='查詢即時資訊', text=res[1]['Name'])
+                    #URIAction(label='官方網站', uri=web_res[1])
                 ]),
                 CarouselColumn(thumbnail_image_url=res[2]['Photo1'],text='約 '+str(res[2]['Distance'])+' 公里', title=res[2]['Name'], actions=[
-                    MessageAction(label='查詢即時資訊', text=res[2]['Name']),
-                    URIAction(label='官方網站', uri=web_res[2])
+                    MessageAction(label='查詢即時資訊', text=res[2]['Name'])
+                    #URIAction(label='官方網站', uri=web_res[2])
                 ])
             ])
         template_message = TemplateSendMessage(

@@ -16,7 +16,7 @@ from linebot.models import (
 from datetime import datetime,timezone,timedelta
 
 
-def temp_dashboard(gym_name, gym_now, gym_total, swim_now, swim_total, tmp):
+def main_info(gym_name, gym_now, gym_total, swim_now, swim_total, tmp):
 
     dt = datetime.utcnow()
     dt = dt.replace(tzinfo=timezone.utc)
