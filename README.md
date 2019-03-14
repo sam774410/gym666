@@ -7,7 +7,8 @@
 
 #### 系統建置：
 * python 3.6
-* OpenData: [全國運動場館資訊網](https://iplay.sa.gov.tw/webapi)
+* Dialogflow 理解語意
+* OpenData Source : [全國運動場館資訊網](https://iplay.sa.gov.tw/webapi)
 
 #### 畫面截圖：
 * 輸入地標返回最近運動中心
