@@ -22,13 +22,6 @@
     ![Imgur](https://i.imgur.com/Jgil6b6.jpg?1)
     
 
-### Docker 打包：
-
-```sh
-cd gym666
-docker build . -t {your name}/{project name} --no-cache
-docker run -d -p 3000:3000 {your name}/{project name}
-```
     
 ### Add Me !
 ##### 手機點擊[連結](https://line.me/R/ti/p/%40dih9899p)
