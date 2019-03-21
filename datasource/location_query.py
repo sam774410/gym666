@@ -1,6 +1,6 @@
 import requests
 import json
-import json
+
 
 def gym_search(lon, lat):
 
