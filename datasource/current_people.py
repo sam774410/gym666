@@ -7,6 +7,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import re
+import time
 
 #14
 A_site = {'中山運動中心': 'cssc', '南港運動中心': 'ngsc', '信義運動中心': 'xysc', '大安運動中心': 'dasc', '文山運動中心': 'wssc', 
