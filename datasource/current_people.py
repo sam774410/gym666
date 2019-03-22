@@ -129,9 +129,11 @@ def get_NP_site():
 
         print("南平運動中心抓取完成")
         print(res)
+        time.sleep(0.1)
         return res
     else:
         print("南平運動中心擷取失敗...")
+        time.sleep(0.1)
         return 
 
 
@@ -159,9 +161,11 @@ def get_TS_site():
 
         print("淡水運動中心抓取完成")
         print(res)
+        time.sleep(0.1)
         return res
     else:
         print("淡水運動中心擷取失敗...")
+        time.sleep(0.1)
         return 
 
 
@@ -184,9 +188,11 @@ def get_SY_site():
 
         print("三鶯運動中心抓取完成")
         print(res)
+        time.sleep(0.1)
         return res
     else:
         print("三鶯運動中心擷取失敗...")
+        time.sleep(0.1)
         return
 
 
@@ -209,9 +215,11 @@ def get_YG_site():
 
         print("鶯歌運動中心抓取完成")
         print(res)
+        time.sleep(0.1)
         return res
     else:
         print("鶯歌運動中心擷取失敗...")
+        time.sleep(0.1)
         return
 
 ####################
