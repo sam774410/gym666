@@ -23,11 +23,12 @@ from linebot.models import (
     SeparatorComponent, QuickReply, QuickReplyButton
 )
 
-from helper.config import line_channel_secret, line_channel_access_token
+
 from template.dashboard import main_info
 from datasource.current_people import A_site, B_site, C_site, Other_site, current_people
 from datasource.location_query import gym_search, gym_detail, gym_address
 from dialogflow.nlp import get_GYM_NAME
+from helper.config import line_channel_secret, line_channel_access_token
 
 app = Flask(__name__)
 
