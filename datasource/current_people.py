@@ -225,4 +225,5 @@ def get_YG_site():
 
 ####################
 #other
-Other_site = {'南平運動中心': get_NP_site(), '淡水國民運動中心': get_TS_site(), '三鶯國民運動中心': get_SY_site(), '鶯歌國民運動中心': get_YG_site()}
+#Other_site = {'南平運動中心': get_NP_site(), '淡水國民運動中心': get_TS_site(), '三鶯國民運動中心': get_SY_site(), '鶯歌國民運動中心': get_YG_site()}
+Other_site = {'南平運動中心': get_NP_site(), '三鶯國民運動中心': get_SY_site(), '鶯歌國民運動中心': get_YG_site()}
