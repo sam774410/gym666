@@ -24,7 +24,7 @@
     
     
 ## 加入好友 !
-#### 手機點擊[連結](https://line.me/R/ti/p/%40dih9899p)
+#### 手機點擊[連結](https://line.me/R/ti/p/%40pxb9680t)
 
 #### QR code:
 ![Imgur](https://i.imgur.com/r5Uj92W.png)
